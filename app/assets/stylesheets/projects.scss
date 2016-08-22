@@ -1,0 +1,205 @@
+.projects-view{
+  top: 52px;
+  bottom: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  .projects-view-row{
+    height: 100%;
+  }
+
+  //project bar----------------------------------------
+  .projects-bar{
+    border: 1px solid #eeeeee;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    .projects-list-view{
+      height: 100%;
+      padding: 10px 0;
+      input{
+        width: 100%;
+      }
+    }
+    .new-proj{
+      width: 100%;
+
+    }
+    .new-proj-container{
+      padding: 0 10px;
+    }
+    .list{
+      height: calc(100% - 34px);
+      margin-top: 10px;
+      margin-bottom: 0;
+      overflow-y: auto;
+      padding: 0 10px;
+    }
+    .project-item-view{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  //show project -----------------------------------
+  .show-project-container{
+    height: 100%;
+    .show-project-view{height: 100%;}
+    .not-selected-project-view{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 30px;
+    }
+    //project block ----------------------
+    .project-details-row{
+      border: 1px solid #eeeeee;
+      &.extended{
+        height: 70%;
+      }
+      &.intended{
+        height: 90px;
+      }
+      .project-details{
+        height: 100%;
+        padding-bottom: 34px;
+        overflow: hidden;
+        .toggle-tasks{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          border-radius: 0;
+        }
+        .tabs{
+          height: calc(100% - 104px);
+          .tab-content{
+            margin: 5px 0;
+            overflow-y: auto;
+            height: calc(100% - 52px);
+          }
+        }
+        .project-name{
+          width: 100%;
+          border: none;
+          text-align: center;
+          &:disabled{
+            cursor: default;
+            background-color: white;
+          }
+        }
+        .project-description{
+          width: 100%;
+          border: none;
+          height: 200px;
+          &:disabled{
+            cursor: default;
+            background-color: white;
+          }
+        }
+        .upload-file{
+          display: none;
+        }
+        .upload-file-btn{
+          width: 100%;
+        }
+      }
+      .graph-view{
+        position: relative;
+        .change-range{
+          height: 30px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+    //tasks block ----------------------------
+    .show-tasks-row{
+      &.extended{
+        height: calc(100% - 90px);
+      }
+      &.intended{
+        height: 30%;
+      }
+      .tasks-bar{
+        height: 100%;
+        border: 1px solid #eeeeee;
+        padding-right: 0;
+        padding-left: 0;
+        .tasks-list-view{
+          margin: 0;
+          height: 100%;
+          padding-bottom: 30px;
+          padding-top: 39px;
+          overflow: hidden;
+          .new-task{
+            width: 100%;
+            margin-bottom: 5px;
+            position: absolute;
+            top: 0;
+          }
+          .task-item-view input{
+            width: 100%;
+          }
+          .list{
+            margin: 0;
+            overflow-y: auto;
+            height: 100%;
+          }
+        }
+        .prompt{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 30px;
+          border-top: 1px solid #f5f5f5;
+          padding: 5px;
+          text-align: center;
+        }
+      }
+      .show-task-bar{
+        height: 100%;
+        border: 1px solid #eeeeee;
+        .not-selected-task-view{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          font-size: 20px;
+        }
+        //show task ------------------------------------------------
+        .show-task-view{
+          height: 100%;
+          overflow: auto;
+          .task-title{
+            width: 100%;
+            text-align: center;
+            border: none;
+            &:disabled{
+              background-color: white;
+            }
+          }
+          .assigned-to-dd{
+            display: inline-block;
+          }
+          .change-status-panel .btn{
+            display: none;
+          }
+          .task-description{
+            width: 100%;
+            border: none;
+            height: 300px;
+            &:disabled{
+              cursor: default;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

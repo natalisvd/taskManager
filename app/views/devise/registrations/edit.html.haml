@@ -1,0 +1,48 @@
+.container_login_user
+  .login_user
+    %h2
+      Edit #{resource_name.to_s.humanize}
+    = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+      = devise_error_messages!
+      .field.readonly
+        = f.text_field :surname, autofocus: true, readonly:"readonly", placeholder: :firstname
+      .field.readonly
+        = f.text_field :name, readonly:"readonly", placeholder: :lastname
+      .field.readonly
+        = f.text_field :patronymic, readonly:"readonly", placeholder: :lastname
+      .field.readonly
+        = f.email_field :email, readonly:"readonly", placeholder: :email
+      - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+        %div
+          Currently waiting confirmation for: #{resource.unconfirmed_email}
+      .field.noreadonly
+        %i (leave blank if you don't want to change it)
+        %br/
+        = f.password_field :password, autocomplete: "off" , placeholder: :password
+      .field.noreadonly
+        = f.password_field :password_confirmation, autocomplete: "off", placeholder: :password_confirmation
+      .field.readonly
+        = f.text_field :role, autocomplete: "off", readonly:"readonly", placeholder: :position
+      .field.readonly
+        = f.text_field :birthday, class: "datefield readonly", readonly:"readonly", placeholder: :date_of_birth
+      .field.readonly
+        = f.text_field :salary, autocomplete: "off", readonly:"readonly", placeholder: :salary
+      .field.readonly
+        = f.text_field :employment_date, class: "datefield", readonly:"readonly" , placeholder: :employment_date
+      .field.noreadonly
+        = f.text_field :skype, autocomplete: "off" , placeholder: :skype
+      .field.noreadonly
+        = f.text_field :phone, autocomplete: "off", placeholder: :phone
+      .field.noreadonly
+      %img{"src" => resource.avatar}
+        = f.file_field :avatar, class:"filestyle",:"data-buttonText"=>"Upload avatar", :"data-input"=>"false", :"data-icon"=>"false", :"data-badge"=>"false"
+      .field.noreadonly
+        %i (we need your current password to confirm your changes)
+        %br/
+        = f.password_field :current_password, autocomplete: "off" , placeholder: :current_password
+      .actions
+        = f.submit "Update"
+    %h3 Cancel my account
+    %p
+      Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+    = link_to "Back", :back

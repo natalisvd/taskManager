@@ -1,0 +1,171 @@
+.calendar-page, .zametki-page, #create_note, .news-index-page, .news-show-page, .weeks-index-page, .weeks-show-page {
+  .container_login_user {
+    width: 100%;
+    height: 100%;
+    background-image: url('couvRubyNinja.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .login_user {
+      background: honeydew;
+      opacity: 0.6;
+      padding: 10px;
+      position: absolute;
+      left: 140px;
+      top: 90px;
+    }
+  }
+  .field input {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+  }
+
+  #new_project {
+    //background: honeydew;
+    //opacity: 0.6;
+    padding: 10px;
+    //position: absolute;
+    //left: 190px;
+    //top: 190px;
+    color: black;
+  }
+  .cont {
+    width: 100%;
+    height: 92%;
+    background-image: url('couvRubyNinja.png');
+
+  }
+  .active {
+    border: 2px solid black !important;
+    background-color: rgba(127, 135, 245, 0.51);
+  }
+  .task {
+    border: 1px solid black;
+    margin: -1px;
+    color: black;
+
+  }
+  .form_task {
+    top: 50px;
+    left: 200px;
+    position: absolute;
+  }
+  .task_child {
+    margin-left: 200px;
+  }
+  .children {
+    border: 1px solid #31b0d5;
+  }
+
+  &.all_proj {
+    background-color: #d0dfdf;
+    background: url('https://wallpaperscraft.com/image/surface_stains_light_background_50550_1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    width: 100%;
+    height: 92%;
+    margin-top: -20px;
+  }
+  .project_section {
+    height: 100%;
+
+    .project_section_1 {
+      height: 100%;
+      background-color: #6b7c8d;
+
+      .list_project {
+        padding-left: 5px;
+        color: black;
+        font-family: Roboto;
+        font-size: 15px;
+
+      }
+      .blue-bord {
+        border-left: 5px solid #2dabc5;
+      }
+      .grin-bord {
+        border-left: 5px solid #39c525;
+      }
+      .pink-bord {
+        border-left: 5px solid #c525af;
+      }
+
+    }
+    .project_section_2 {
+      box-shadow: 2px -10px 8px 4px rgba(0, 0, 1, 0.4) inset;
+      height: 100%;
+      color: #1e1e1e;
+      //background-color: #fff;
+      //background: url(img/rasp.png) repeat;
+      background-color: #bed5e6;
+      //border: 10px solid #fff;
+      font-family: Roboto;
+      font-size: 15px;
+      a {
+        color: #00083f !important;
+      }
+      .project-list {
+        td:first-child {
+          min-width: 100px;
+        }
+        td {
+          padding-left: 30px;
+          padding-bottom: 10px
+        }
+
+      }
+    }
+    .modal.member.fade {
+      color: #00083f;
+    }
+
+    .project_section_3 {
+      height: 100%;
+      background-color: #b0c5d6;
+      //background: url(img/rasp.png) repeat;
+      color: black;
+      //border-bottom: 10px solid #fff ;
+      //border-top: 10px solid #fff ;
+      font-family: Roboto;
+      font-size: 15px;
+      a {
+        color: black;
+        font-size: 15px;
+        font-family: Roboto;
+      }
+    }
+  }
+  .proj {
+    background-color: lightgrey;
+    //background: url('hq-wallpapers_ru_abstraction3d_875_1920x1200.jpg');
+    height: 92%;
+
+    width: 100%;
+    font-family: "Comic Sans MS";
+    //  font-size: 1.3em;
+  }
+
+  .lvl1 {
+    padding-left: 5px !important;
+  }
+  .lvl2 {
+    padding-left: 10px !important;
+  }
+  .lvl3 {
+    padding-left: 15px !important;
+  }
+  .lvl4 {
+    padding-left: 20px !important;
+  }
+  .lvl5 {
+    padding-left: 25px !important;
+  }
+  .Proj_create {
+    color: forestgreen;
+    font-size: 1.5em;
+    text-decoration: underline;
+  }
+}

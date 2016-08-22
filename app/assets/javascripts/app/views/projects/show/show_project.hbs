@@ -1,0 +1,61 @@
+<div class="row project-details-row {{project_row_class}}">
+    <div class="col-md-12 project-details">
+        <h3 class="text-center">
+            <input class="project-name" value="{{name}}" {{#if is_creator}}{{else}}disabled="disabled"{{/if}}/>
+        </h3>
+        <h6 class="text-center">дата создания {{created_at}}</h6>
+        <h6 class="text-center">создатель {{creator.name}} {{creator.surname}}</h6>
+        <div class="tabs">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#description" aria-controls="description" role="tab" data-toggle="tab">Описание</a>
+                </li>
+                <li role="presentation">
+                    <a href="#graph" aria-controls="graph" role="tab" data-toggle="tab">График</a>
+                </li>
+                <li role="presentation">
+                    <a href="#access" aria-controls="access" role="tab" data-toggle="tab">Доступы</a>
+                </li>
+                <li role="presentation">
+                    <a href="#files" aria-controls="files" role="tab" data-toggle="tab">Файлы</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="description">
+                    <textarea class="project-description" {{#if is_creator}}{{else}}disabled="disabled"{{/if}}>{{description}}</textarea>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="graph"></div>
+                <div role="tabpanel" class="tab-pane" id="access"></div>
+                <div role="tabpanel" class="tab-pane" id="files"></div>
+            </div>
+
+        </div>
+
+        <div class="btn btn-info toggle-tasks">
+            <span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>
+        </div>
+
+    </div>
+</div>
+<div class="row show-tasks-row {{task_row_class}}">
+    <div class="col-md-6 tasks-bar">
+        <div class="prompt">
+            <span>Состояния заданий:</span>
+            <span class="label label-primary">Opened</span>
+            <span class="label label-info">In progress</span>
+            <span class="label label-warning">Paused</span>
+            <span class="label label-default">Finished</span>
+            <span class="label label-danger">Returned</span>
+            <span class="label label-success">Closed</span>
+        </div>
+    </div>
+    <div class="col-md-6 show-task-bar">
+        <div class="not-selected-task-view">
+            Выберите или создайте новое задание
+        </div>
+    </div>
+</div>

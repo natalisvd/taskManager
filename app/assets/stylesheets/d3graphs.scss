@@ -1,0 +1,59 @@
+.chart {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.axis path,.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+//.bar {
+//  fill: #33b5e5;
+//}
+//
+//.bar-failed {
+//  fill: #CC0000;
+//}
+//
+//.bar-running {
+//  fill: #669900;
+//  stroke-width:3;
+//  stroke:rgb(0,0,0);
+//}
+//
+//.bar-succeeded {
+//  fill: #33b5e5;
+//}
+//
+//.bar-killed {
+//  fill: #ffbb33;
+//}
+
+
+.bar-opened{
+  fill: #337ab7;
+}
+
+.bar-in-progress{
+  fill: #5bc0de;
+}
+
+.bar-paused{
+  fill: #f0ad4e;
+}
+
+.bar-finished{
+  fill: #777777;
+}
+
+.bar-returned{
+  fill: #d9534f;
+}
+.bar-closed{
+  fill: #5cb85c;
+  fill-opacity: 0;
+  stroke: #5cb85c;
+  stroke-width: 5px;
+}

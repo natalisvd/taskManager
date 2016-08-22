@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %link{href: "assets/img/favicon.ico", rel: "icon", type: "image/ico"}/
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %title= content_for?(:title) ? yield(:title) : 'ninja-team'
+    %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Scheduler'}"}
+    = include_gon
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => false
+    = csrf_meta_tags
+
+  %body
+    = render partial: 'layouts/navbar'
+    = yield
+    -#.footer TODO fix
+      %i.glyphicon.glyphicon-copyright-mark
+      2016 Наталья Бойченко

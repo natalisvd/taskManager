@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: 
+  attached: 
+  user: 
+  comment: 
+  task_id: 
+
+two:
+  content: 
+  attached: 
+  user: 
+  comment: 
+  task_id: 

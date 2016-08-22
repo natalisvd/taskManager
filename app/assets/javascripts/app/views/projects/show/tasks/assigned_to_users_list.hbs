@@ -1,0 +1,8 @@
+Исполнитель
+<div class="dropdown assigned-to-dd">
+    <a class="dropdown-toggle" type="button" id="dropdownMenu1" {{#if is_creator}}data-toggle="dropdown"{{/if}} aria-haspopup="true" aria-expanded="true">
+        <span class="task-executor-name">{{executor.name}} {{executor.surname}}</span>
+        {{#if is_creator}}<span class="caret"></span>{{/if}}
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1"></ul>
+</div>
