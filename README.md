@@ -18,7 +18,6 @@
 - страница проекта с заданиями и возможностью создавать их 
 - страница администратора созданая с помощью �ActiveAdmin.
 
-
 License
 
 Task Manager is made available under the MIT License.
