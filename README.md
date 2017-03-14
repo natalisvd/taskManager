@@ -1,5 +1,7 @@
 #Task Menedger
+
 Это сайт для управления проектами.
+
 При разработки сайта использовались такие технологии:
 - Ruby on Rails v 4.2.1
 - Ruby v 2.2.0 
@@ -7,6 +9,7 @@
 - PostgreSQL
 - Jquery Datepicer
 - Bootstrap.
+
 #Этот сайт имеет такие страницы:
 - страница входа
 - страница профиля где можно увидеть информациию о нем
@@ -16,4 +19,7 @@
 - страница администратора созданая с помощью �ActiveAdmin.
 
 
+License
+
+Task Menedger is made available under the MIT License.
 
