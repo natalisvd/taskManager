@@ -1,4 +1,4 @@
-#Task Menedger
+#Task Manager
 
 Это сайт для управления проектами.
 
@@ -21,5 +21,5 @@
 
 License
 
-Task Menedger is made available under the MIT License.
+Task Manager is made available under the MIT License.
 
